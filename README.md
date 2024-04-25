@@ -51,3 +51,4 @@ Although there is no need to download, you can clone this repository by copying 
 You can have a read through my README.md file and AzureProjectDiagram.pdf file to see how I went about the project. 
 
 **License information**
+his repository is open-source and available for download. 
