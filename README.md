@@ -8,6 +8,7 @@ A critical part of the project is a simulated disaster recovery scenario to test
 Additionally, for enhanced security, I will integrate Microsoft Entra ID to define access roles, which will add a robust layer of control and protection to our system.
 
 **A description of the project**
+
 1. I set up a virtual machine on Azure and configured the inbound rule to allow RDP traffic on port 3389, enabling secure remote connections. I then connected to this VM from my local machine using Remote Desktop Connection and the provided RDP file. Once logged into the VM, I installed SQL Server and SQL Server Management Studio (SSMS) directly on it. I restored the AdventureWorks database from a backup file, using SMSS, ensuring that the system was ready for database management and operations tasks. This setup serves as the foundation.
 2. To transition the AdventureWorks database from our on-premises server to Azure, I started by setting up a new Azure SQL Database. During this setup, I opted for SQL
    Login authentication, a decision that streamlined later processes by simplifying database access from various locations.
@@ -41,14 +42,18 @@ Additionally, for enhanced security, I will integrate Microsoft Entra ID to defi
    To finalize the setup, I reconnected to my production database using the credentials of the new DB Reader user to test the assigned permissions. This step helped me to confirm that the correct role had been assigned, and the user had the appropriate read-only access. Through these actions, I successfully configured and defined roles, and created both admin and reader accounts, streamlining user access and enhancing security.
 
 **File structure of the project**
+
 - README.md file contains all my experience with the project.
 - AzureProjectDiagram.pdf file contains a UML visual diagram for the architecture I built.
 
 **Installation instructions**
-Although there is no need to download, you can clone this repository by copying and pasting the following in your command line. git clone 
+
+Although there is no need to download, you can clone this repository by copying and pasting the following in your command line. git clone https://github.com/Tayyaba2287/azure-database-migration663.git
 
 **Usage instructions**
+
 You can have a read through my README.md file and AzureProjectDiagram.pdf file to see how I went about the project. 
 
 **License information**
+
 his repository is open-source and available for download. 
