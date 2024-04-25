@@ -1,5 +1,6 @@
 # Azure Database Migration Project
 **Overview**
+
 In this project, I'll be designing and building a cloud-based database system on Microsoft Azure to demonstrate my cloud engineering skills. I'll start by setting up a production environment database and then migrate it to Azure SQL Database. This phase will include key processes like data backup, restoration, and setting up automated scheduling to solidify our data management practices.
 
 A critical part of the project is a simulated disaster recovery scenario to test our data resilience, involving data loss and recovery strategies. I will also delve into the complexities of geo-replication and failover configurations to ensure data availability under any conditions.
@@ -34,19 +35,19 @@ Additionally, for enhanced security, I will integrate Microsoft Entra ID to defi
    Next, I carried out a planned failover to the secondary region. This move shifted operations to the secondary database copy and allowed me to simulate real-world challenges. I carefully checked the availability and data consistency of the failover database to ensure it met operational standards.
    Finally, I executed a failback to the primary region, showing the reliable and repeatable nature of my failover strategy.
 
-6. To enhance the security and management of my Azure SQL production database, I began by integrating Microsoft Entra ID as a trusted identity provider, enabling authentication using Microsoft Entra credentials. This step was crucial for setting a robust foundation for access control.
-
-I then designated a Microsoft Entra admin with privileged permissions within my Azure SQL Database environment. This admin role was critical as it held authority over user management and access control. I ensured that I could connect to the production database using these Microsoft Entra admin credentials within Azure Data Studio.
-
-Following this, I created a new user account in Microsoft Entra ID to act as the DB Reader. With the admin credentials, I connected to the production database in Azure Data Studio and assigned the db_datareader role to this newly created DB Reader User. This role definition was specifically chosen to provide the user with read-only privileges, ensuring they could access data without the ability to modify it.
-
-To finalize the setup, I reconnected to my production database using the credentials of the new DB Reader user to test the assigned permissions. This step was essential to confirm that the correct role had been assigned, and the user had the appropriate read-only access. Through these actions, I successfully configured and defined roles, and created both admin and reader accounts, streamlining user access and enhancing security.
-
+6. To enhance the security and management of my Azure SQL production database, I began by integrating Microsoft Entra ID as a trusted identity provider, enabling authentication using Microsoft Entra credentials. This step was important for setting a robust foundation for access control.
+   I then designated a Microsoft Entra admin with privileged permissions within my Azure SQL Database environment. This admin role was critical as it held authority over user management and access control. I ensured that I could connect to the production database using these Microsoft Entra admin credentials within Azure Data Studio.
+   Following this, I created a new user account in Microsoft Entra ID to act as the DB Reader. With the admin credentials, I connected to the production database in Azure Data Studio and assigned the db_datareader role to this newly created DB Reader User. This role definition was specifically chosen to provide the user with read-only privileges, ensuring they could access data without the ability to modify it.
+   To finalize the setup, I reconnected to my production database using the credentials of the new DB Reader user to test the assigned permissions. This step helped me to confirm that the correct role had been assigned, and the user had the appropriate read-only access. Through these actions, I successfully configured and defined roles, and created both admin and reader accounts, streamlining user access and enhancing security.
 
 **File structure of the project**
+- README.md file contains all my experience with the project.
+- AzureProjectDiagram.pdf file contains a UML visual diagram for the architecture I built.
 
 **Installation instructions**
+Although there is no need to download, you can clone this repository by copying and pasting the following in your command line. git clone 
 
 **Usage instructions**
+You can have a read through my README.md file and AzureProjectDiagram.pdf file to see how I went about the project. 
 
 **License information**
